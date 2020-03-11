@@ -1,0 +1,23 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Prueba";
+}
+
+<div class="text-center">
+    <form method="post">
+        <input type="submit" asp-page-handler="MostrarMensaje1"  value="Mostrar mensaje 1"/>
+        <input type="submit" asp-page-handler="MostrarMensaje2" value="Mostrar mensaje 2" />
+    </form>
+    <h5>@Model.Mensaje1 @Model.MensajeInicio</h5>
+
+
+    sdsdsdsdsd
+
+    @foreach (var msj in Model.Mensajes)
+    {
+        <h1>@msj</h1>
+    }
+
+
+</div>
